@@ -1,0 +1,71 @@
+criar v1 = 23.5;
+criar v2 = 17.8;
+criar v3 = 31.2;
+criar v4 = 25.0;
+criar v5 = 19.5;
+
+criar soma = v1 + v2 + v3 + v4 + v5;
+criar media = soma / 5;
+exibir("Media:");
+exibir(media);
+
+criar diff1 = v1 - media;
+criar diff2 = v2 - media;
+criar diff3 = v3 - media;
+criar diff4 = v4 - media;
+criar diff5 = v5 - media;
+
+criar quad1 = diff1 ^ 2;
+criar quad2 = diff2 ^ 2;
+criar quad3 = diff3 ^ 2;
+criar quad4 = diff4 ^ 2;
+criar quad5 = diff5 ^ 2;
+
+criar somaQuadrados = quad1 + quad2 + quad3 + quad4 + quad5;
+criar variancia = somaQuadrados / 5;
+exibir("Variancia:");
+exibir(variancia);
+
+se (media >= 25.0 && media <= 30.0) entao {
+    exibir("Media alta");
+}
+senao {
+    se (media >= 15.0 && media < 25.0) entao {
+        exibir("Media normal");
+    }
+    senao {
+        se (media < 15.0) entao {
+            exibir("Media baixa");
+        }
+        senao {
+            exibir("Media muito alta");
+        }
+    }
+}
+
+criar consistente = (v1 > 0) && (v2 > 0) && (v3 > 0) && (v4 > 0) && (v5 > 0);
+se (!consistente) entao {
+    exibir("Aviso: valores negativos detectados");
+}
+senao {
+    exibir("Todos os valores são positivos");
+}
+
+criar desvioPadrao = variancia ^ 0.5;
+criar cv = (desvioPadrao / media) * 100;
+exibir("Coeficiente de Variacao (%):");
+exibir(cv);
+
+se (cv < 15.0) entao {
+    exibir("Baixa dispersao (CV < 15%)");
+}
+senao {
+    se (cv >= 15.0 && cv <= 30.0) entao {
+        exibir("Media dispersao");
+    }
+    senao {
+        exibir("Alta dispersao (CV > 30%)");
+    }
+}
+
+exibir("Programa finalizado com sucesso!");

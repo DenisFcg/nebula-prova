@@ -1,0 +1,10 @@
+funcao dobro(x) {
+    devolve x * 2;
+}
+
+funcao aplicar(valor, fn) {
+    devolve fn(valor);
+}
+
+criar x = aplicar(2, dobro);
+saida(x);

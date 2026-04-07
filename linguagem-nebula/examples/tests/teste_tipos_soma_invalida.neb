@@ -1,0 +1,12 @@
+// Testa erro de tipos na operação de soma
+
+criar texto = "ola";
+criar numero = 10;
+
+// Deve falhar: string + numero
+criar resultado1 = texto + numero;
+exibir(resultado1);
+
+// Deve falhar: numero + string
+criar resultado2 = numero + texto;
+exibir(resultado2);

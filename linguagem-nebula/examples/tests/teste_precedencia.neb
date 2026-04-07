@@ -1,0 +1,26 @@
+criar a = 2;
+criar b = 3;
+criar c = 4;
+
+criar resultado1 = a + b * c;
+exibir(resultado1);
+
+criar resultado2 = (a + b) * c;
+exibir(resultado2);
+
+criar resultado3 = 10 / 2 + 3 % 2;
+exibir(resultado3);
+
+criar resultado4 = 2 ^ 3 ^ 2;
+exibir(resultado4);
+
+criar resultado5 = 5 < 3 == falso;
+exibir(resultado5);
+
+criar x = verdadeiro;
+criar y = falso;
+criar resultado6 = x || y && y;
+exibir(resultado6);
+
+criar resultado7 = !x && y;
+exibir(resultado7);

@@ -1,0 +1,54 @@
+criar idade = 25;
+criar nome = "Maria";
+
+se (idade >= 18) entao {
+    exibir("Maior de idade");
+}
+
+se (idade < 13) entao {
+    exibir("Criança");
+}
+senao {
+    se (idade < 20) entao {
+        exibir("Adolescente");
+    }
+    senao {
+        exibir("Adulto");
+    }
+}
+
+criar temCarteira = verdadeiro;
+criar pontos = 15;
+
+se (temCarteira && pontos > 20) entao {
+    exibir("Habilitação suspensa");
+}
+senao {
+    se (temCarteira && pontos <= 20) entao {
+        exibir("Habilitação ativa");
+    }
+    senao {
+        exibir("Sem habilitação");
+    }
+}
+
+criar nota1 = 7.5;
+criar nota2 = 8.0;
+criar media = (nota1 + nota2) / 2;
+
+se (media >= 7.0 && media < 9.0) entao {
+    exibir("Aprovado");
+}
+senao {
+    se (media >= 9.0) entao {
+        exibir("Aprovado com mérito");
+    }
+    senao {
+        se (media >= 5.0) entao {
+            exibir("Recuperação");
+        }
+        senao {
+            exibir("Reprovado");
+        }
+    }
+}

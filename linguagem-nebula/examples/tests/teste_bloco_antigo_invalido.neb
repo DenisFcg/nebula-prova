@@ -1,0 +1,5 @@
+// Testa que o formato antigo de bloco nao e mais aceito
+
+se (verdadeiro) inicio
+    exibir("bloco antigo");
+fim
