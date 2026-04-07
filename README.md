@@ -5,26 +5,17 @@ Linguagem de programação didática para a disciplina de Construção de Interp
 ## 📁 Estrutura do Projeto
 
 ```
-LINGUAGEM-NEBULA/
-├── compilador/
-│   ├── app.js
-│   ├── index.html
-│   ├── nebula_compiler.js
-│   ├── README.md
-│   ├── style.css
-│   └── test.html
-│
-├── docs/
-│   ├── ESPECIFICACAO_NEBULA.pdf
-│   ├── INSTRUCOES_EXECUCAO.pdf
-│   └── README.pdf
-│
+NEBULA-PROVA/
 ├── examples/
 │   └── tests/
+│       ├── consulta_planetas.neb
+│       ├── teste_bloco_antigo_invalido.neb
 │       ├── teste_condicional.neb
-│       ├── teste_erros_recuperaveis.neb
+│       ├── teste_erros.neb
+│       ├── teste_funcao.neb
 │       ├── teste_invalido.neb
 │       ├── teste_precedencia.neb
+│       ├── teste_tipos_soma_invalida.neb
 │       └── programa_exemplo.neb
 │
 ├── src/
@@ -53,8 +44,7 @@ LINGUAGEM-NEBULA/
 │   ├── nebula.py
 │   └── run_tests.py
 │
-├── meu_programa.neb
-├── nebula_ler_aqui.pdf
+├── .gitignore
 └── README.md
 ```
 
@@ -88,28 +78,6 @@ python src/run_tests.py
 - **Comentários**: `//` linha única, `/* */` bloco
 - **Tipos**: números inteiros, reais, strings, booleanos
 
-## 💻 Exemplo de Código
-
-```nebula
-// Declaração de variáveis
-criar nome = "Mundo";
-criar numero = 42;
-
-// Saída
-criar mensagem = "Olá, " + nome + "!";
-exibir(mensagem);
-
-// Condicional
-se (numero > 40) inicio
-    exibir("Número é maior que 40!");
-fim
-
-// Loop
-enquanto (numero < 50) inicio
-    exibir(numero);
-    numero = numero + 1;
-fim
-```
 
 ## 🧪 Testes
 
@@ -244,8 +212,8 @@ Ao executar `python src/run_tests.py`, esses cenários podem ser observados dire
 
 ## 👥 Autores
 
-- João Victor Rocha Santos
-- Denis Filho Cunha Godoi
+- João Victor Rocha Santos - 600951313
+- Denis Filho Cunha Godoi - 601005438
 
 **Disciplina**: N477 - Construção de Interpretadores e Compiladores  
 **Instituição**: Unitri
